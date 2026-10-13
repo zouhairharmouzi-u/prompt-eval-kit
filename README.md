@@ -10,4 +10,12 @@ A lightweight Python library designed to test, evaluate, and validate structured
 Clone the repository and integrate it directly into your project workflows.
 
 ```bash
-git clone [https://github.com/zouhairharmouzi-u/prompt-eval-kit.git](https://github.com/zouhairharmouzi-u/prompt-eval-kit.git)
+git clone https://github.com/zouhairharmouzi-u/prompt-eval-kit.git
+## Quickstart
+```python
+from evaluator import PromptEvaluator
+
+evaluator = PromptEvaluator()
+is_valid = evaluator.is_valid_json('{"result": "ok"}')
+print(is_valid)
+```
